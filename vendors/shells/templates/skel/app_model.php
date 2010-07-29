@@ -2,7 +2,7 @@
 
 class AppModel extends Model {
 
-    public $actAs('Senchan.CreateRid');
+    public $actsAs = array('Senchan.CreateRid');
 
     public function __construct($id = false, $table = null, $ds = null){
         $env = env('ENVIRONMENT');
