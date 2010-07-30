@@ -2,6 +2,16 @@
 
 class DATABASE_CONFIG {
 
+	var $default = array(
+		'driver' => 'mysqli',
+		'persistent' => false,
+		'host' => 'localhost',
+		'login' => 'root',
+		'password' => '',
+		'database' => 'db_dev',
+        'encoding' => 'utf8'
+	);
+
 	var $pub = array(
 		'driver' => 'mysqli',
 		'persistent' => false,
@@ -12,13 +22,4 @@ class DATABASE_CONFIG {
         'encoding' => 'utf8'
 	);
 
-	var $dev = array(
-		'driver' => 'mysqli',
-		'persistent' => false,
-		'host' => 'localhost',
-		'login' => 'root',
-		'password' => '',
-		'database' => 'db_dev',
-        'encoding' => 'utf8'
-	);
 }

@@ -4,7 +4,7 @@
  * ridというフィールドがなければ作成しないようになっているので、とりあえず読み込んでおくのがよさげ
  * @author Nishibayashi Takuji
  */
-App::import('Vendor','string_random');
+App::import('Vendor','Senchan.string_random');
 class CreateRidBehavior extends ModelBehavior {
     
     //保存前だとinsertかupdateかわからない仕様なのです
